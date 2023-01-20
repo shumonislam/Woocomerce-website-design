@@ -1,0 +1,476 @@
+
+/******* css top start*******/
+@import url('https:// fonts.googleapis.com/css2?family=Merriweather+sans:wght@300;400;500;600&display=swap');
+:root{
+    --primaryColor: #1155A6;
+    --accentColor: #e5e3e2;
+    --textColor: #3C3C3E;
+}
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+/******* css top end*******/
+
+/******** header section start ********/
+
+.top-header,
+.bottom-header{
+    display: flex;
+    justify-content: space-between;
+    padding: .4rem 2rem;
+}
+.top-header{
+    background: var(--primaryColor);
+    color: #FFF;
+}
+.top-header small{
+    margin-top: .3rem;
+}
+.nav-icons ion-icon{
+    font-size: 1.3rem;
+    margin-right: 1rem;
+}
+.bottom-header{
+    padding: 1rem 2rem;
+}
+.brand{
+    display: flex;
+}
+.brand img{
+    margin-right: .8rem;
+}
+.brand h4{
+    font-size: 1.5rem;
+    margin-top: .5rem;
+    color: var(--textColor);
+}
+nav ul{
+    display: flex;
+}
+nav li{
+    margin-left: 1rem;
+}
+nav li a{
+    font-size: .8rem;
+    color: var(--textColor);
+    font-weight: 550;
+}
+
+/******* header section end *********/
+
+/*mobile-nav start*/
+#toggle-nav{
+    display: none;
+}
+#toggle-nav:checked ~ .mobile-nav{
+    right: 0;
+}
+.mobile-nav{
+    position: fixed;
+    z-index: 100;
+    height: 100%;
+    right: -460px;
+    top: 0;
+    width: 380px;
+    background: var(--accentColor);
+    transition: right 300ms;
+}
+.mobile-nav-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+.close-btn label{
+    font-size: 2rem;
+    cursor: pointer;
+}
+.mobile-nav-menu{
+    padding: .4rem 1.5rem;
+}
+.mobile-nav-menu li{
+    margin-bottom: 1rem;
+}
+.mobile-nav-menu li a{
+    font-size: 1.3rem;
+    color: var(--textColor);
+    font-weight: 700;
+}
+/*mobile-nav start*/
+
+/********* hero section start*******/
+.hero-section{
+    height: 500px;
+    background-image: url(images/hero\ 2.jpng.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.8;
+}
+.hero-section h1{
+    font-size: 3.2rem;
+    color: #FFF;
+}
+.hero-section p{
+    font-size: 2.3rem;
+    color: #FFF;
+}
+
+/********* hero section end*******/
+
+/********* hero wrapper section start*******/
+.from-control{
+    width: 100%;
+    display: block;
+    height: 40px;
+    border: 1px solid #edeef4;
+    padding: .4rem;
+}
+.btn{
+    padding: 0rem 2.5rem;
+    height: 30px;
+    text-align: center;
+}
+.btn-main{
+    background: var(--primaryColor);
+    color: #FFF;
+    border: 1px solid var(--primaryColor);
+}
+.btn-block{
+    display: block;
+    width: 100%;
+}
+.search-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+}
+.hero-search{
+    padding: 1.4rem 4rem;
+    background: var(--accentColor);
+}
+/********* hero wrapper section end*******/
+
+/***** Main arrival section and slider start*****/
+.arrival-section{
+    padding: 3rem 0rem;
+}
+.section-header{
+    text-align: center;
+}
+.section-header h2{
+    font-size: 2.3rem;
+}
+.section-header span{
+    border-bottom: 3px solid var(--primaryColor);
+    padding-bottom: .6rem;
+}
+.slider-wrapper{
+    margin-top: 3.8rem;
+}
+.slider-container{
+    outline: none !important;
+}
+.slide{
+    position: relative;
+    margin: 0rem 1.5rem;
+    border: 1px solid var(--accentColor) 
+}
+.slide-img{
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center
+}
+.slide-badge{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid var(--primaryColor);
+    background: #FFF;
+    border-radius: 50%;
+    padding: .5rem;
+    font-size: .8rem;
+    font-weight: 600;
+    left: 15px;
+    top: 0px;
+}
+.slide-badge span{
+    border: none;
+}
+.slide-info{
+    padding: 1rem;
+    text-align: center;
+}
+.slide-info h3{
+    font-size: .9rem;
+    color:  var(--textColor);
+    margin-bottom: .6rem;
+}
+.price{
+    margin-bottom: 1rem;
+}
+.price span{
+font-weight: 700;
+color: var(--textColor);
+border: none;
+}
+/***** Main arrival section and slider end*****/
+
+/***** Main banner section start*****/
+.banner-section{
+    background-image: url(images/Banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 65vh;
+}
+.banner-section .wrapper{
+    display: flex;
+    justify-content: flex-end;
+    width: 68%;
+}
+.banner-text{
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.banner-text h1{
+    font-size: 3rem;
+    color: #fffefd;
+}
+.banner-text p{
+    font-size: 2.4rem;
+    color: #fffefd;
+    margin-bottom: 1rem;
+}
+/***** Main banner section end*****/
+
+/***** Main promo-section section start*****/
+.promo-grid{
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    grid-column-gap: 2.5rem;
+    align-items: center;
+}
+.promo-section .wrapper{
+    padding: 2rem 4rem;
+}
+.promo-banner-text{
+    text-align: center;
+}
+.promo-banner-text h2{
+    font-size: 2rem;
+    width: 700;
+    margin-bottom: .5rem;
+    
+}
+.promo-banner-text p{
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+.promo-banner-text button{
+    padding: .6rem 3rem;
+}
+.promo-cart{
+    text-align: center;
+}
+.promo-cart a{
+    font-weight: bold;
+    color: var(--textColor);
+}
+/***** Main promo-section section end*****/
+
+/***** Main promo2-section section start*****/
+.promo-2{
+    background: #dad3d377;
+    padding: 2rem 0rem;
+}
+.promo-2 .wrapper{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-column-gap: 2rem;
+}
+.promo-2 .promo-banner-text h2{
+    margin-bottom: 1rem;
+}
+.promp-2-text{
+    font-size: 1.5rem;
+    color: var(--textColor);
+    line-height: 2.2rem;
+}
+.promp-2-text{
+    font-size: 1.1rem;
+    color: var(--textColor);
+}
+.promp-2-text span{
+    text-decoration: underline;
+}
+.promp-2-text span, .promp-2-text small{
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--textColor);
+    margin-right: 1rem;
+}
+
+/***** Main promo2-section section end*****/
+
+/***** Main features-section section start*****/
+.features-section{
+    padding: 2.5rem 0rem;
+    background: #e5e5e9;
+}
+.feaures-grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.features-single{
+    text-align: center;
+}
+.features-single ion-icon{
+    font-size: 3rem;
+    color: var(--primaryColor);
+}
+.features-single div + span{
+    font-size: 1.3rem;
+    color: var(--textColor);
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+/***** Main features-section section end*****/
+
+/***** Main popular-brands section start*****/
+.popular-brands{
+    background: #FFFFFF;
+    padding: 3rem 0rem;
+}
+.brands-header{
+    text-align: center;
+}
+.brands-header h2{
+    font-size: 2rem;
+    color:#444;
+    margin-bottom: .6rem;
+}
+.brands-header p{
+    font-size: 1.5rem;
+    color: var(--textColor);
+    margin-bottom: .6rem;
+}
+.brands-grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.brands-grid img{
+    width: 100% !important;
+    height: 170px;
+}
+/***** Main popular-brands section end*****/
+
+/***** Footer section start*****/
+footer{
+    padding: 3rem;
+    background: #e5e5e9;
+    align-items: center;
+}
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+    margin-left: 2rem;
+}
+.footer-card h4,.footer-from{
+    color: #444;
+}
+.footer-card span,.footer-from span{
+    font-size: .9rem;
+    color: var(--textColor);
+}
+.footer-card div{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.footer-card li{
+    margin-bottom: .5rem;
+    margin-right: 1.5rem;
+}
+.footer-card li a{
+    font-size: 1rem;
+    color: #444;
+}
+.footer-from div{
+    margin-top: .9rem;
+    display: flex;
+}
+
+/***** Footer section end*****/
+
+/****responsive start***/
+@media only screen and (max-width: 768px){
+    nav ul{
+        display: none;
+    }
+    nav label{
+        display: inline-block;
+    }
+    .search-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .promo-grid, .promo-2 .wrapper{
+        grid-template-columns: 100%;
+    }
+    .promo-banner-text{
+        margin-bottom: 2rem;
+    }
+    .feaures-grid, .brands-grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .footer-grid{
+        grid-template-columns: 100%;
+    }
+    .banner-text p{
+        text-align: center;
+    }
+}
+/****responsive start***/
+
+/****mobile responsive start***/
+
+@media only screen and (max-width: 470px){
+    .hero-wrapper{
+        text-align: center;
+    }
+    .hero-section h1{
+        font-size: 2rem;
+    }
+    .hero-section p{
+        font-size: 2rem;
+    }
+    
+    .banner-section .wrapper{
+       margin-left: 5rem;
+    }
+    .footer-grid{
+        grid-template-columns: 100%;
+        margin-left: -.18rem;
+    }
+}
+
+/****mobile responsive start***/
